@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Makanan Padang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--  -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Makanan Padang</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-image text-center text-light" style="position: relative; background-image: url('https://example.com/your-image.jpg'); background-size: cover; background-position: center; height: 100vh;">
+        <!-- Overlay untuk memberikan efek warna -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);"></div>
+        
+        <div class="d-flex h-100 align-items-center justify-content-center" style="position: relative; z-index: 1;">
+            <div>
+                <h1 class="display-3">Selamat Datang di Makanan Padang</h1>
+                <p>Kenikmatan otentik masakan Minangkabau, langsung dari dapur kami.</p>
+                <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Responsif menggunakan media query -->
+    <style>
+        @media (max-width: 768px) {
+            header .display-3 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1.1rem;
+            }
+            header a.btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+    
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Tentang Kami</h2>
+            <p class="text-center mt-4">Makanan Padang adalah restoran yang didedikasikan untuk membawa cita rasa autentik Minangkabau ke dalam kehidupan Anda. Dari rendang hingga gulai, setiap hidangan disiapkan dengan bahan-bahan segar dan resep turun-temurun yang telah diwariskan dari generasi ke generasi. Kami bangga dengan tradisi dan kualitas dalam setiap sajian kami.</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <h4>Misi Kami</h4>
+                    <p>Menyajikan makanan tradisional Minangkabau yang otentik dan berkualitas tinggi kepada pelanggan kami di seluruh Indonesia.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Visi Kami</h4>
+                    <p>Menjadi pilihan utama untuk makanan Padang di tingkat nasional dan internasional, menghubungkan semua orang dengan cita rasa tanah Minang.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Nilai Kami</h4>
+                    <ul>
+                        <li>Autentik</li>
+                        <li>Tradisional</li>
+                        <li>Berkualitas</li>
+                        <li>Kepuasan Pelanggan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Menu Makanan Padang</h2>
+            <p class="text-center">Nikmati berbagai hidangan khas Padang yang siap memanjakan lidah Anda.</p>
+            <div class="row mt-4">
+                <!-- Rendang -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Rendang_traditional_dish.jpg" class="card-img-top" alt="Rendang">
+                        <div class="card-body">
+                            <h5 class="card-title">Rendang</h5>
+                            <p class="card-text">Rendang daging sapi yang dimasak perlahan dengan rempah-rempah pilihan, menghasilkan rasa yang gurih dan pedas.</p>
+                            <button class="btn btn-success" onclick="showMessage('Rendang')">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sate Padang -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/apaja.jpg" class="card-img-top" alt="Sate Padang">
+                        <div class="card-body">
+                            <h5 class="card-title">Sate Padang</h5>
+                            <p class="card-text">Sate daging sapi dengan bumbu kacang yang kaya dan kuah kental, memberikan sensasi rasa yang unik.</p>
+                            <button class="btn btn-success" onclick="showMessage('Sate Padang')">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gulai -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/makamannanana.jpg" class="card-img-top" alt="Gulai">
+                        <div class="card-body">
+                            <h5 class="card-title">Gulai</h5>
+                            <p class="card-text">Gulai daging kambing yang dimasak dengan santan kental dan rempah-rempah, menyajikan aroma dan cita rasa yang kuat.</p>
+                            <button class="btn btn-success" onclick="showMessage('Gulai')">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="bg-dark text-light py-5">
+        <div class="container">
+            <h2 class="text-center">Hidangan Spesial Kami</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h4>Ayam Pop</h4>
+                    <p>Ayam yang digoreng dengan minyak rendah, menghasilkan daging ayam yang lembut dan lezat. Disajikan dengan sambal khas Padang yang menambah kelezatan.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Dendeng Balado</h4>
+                    <p>Daging sapi yang diiris tipis, digoreng hingga renyah, dan disajikan dengan sambal balado yang pedas dan segar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Testimoni Pelanggan</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Rasanya benar-benar otentik! Saya merasa seperti sedang makan di Padang."</p>
+                        <footer class="blockquote-footer">Rina, Jakarta</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Rendang mereka adalah yang terbaik yang pernah saya coba. Sangat direkomendasikan!"</p>
+                        <footer class="blockquote-footer">Andi, Surabaya</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Pelayanan yang luar biasa dan makanan yang lezat. Selalu jadi pilihan saya ketika ingin makanan Padang."</p>
+                        <footer class="blockquote-footer">Dewi, Bandung</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Kontak Kami</h2>
+            <form id="contactForm" class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light text-center py-3">
+        &copy; 2024 Produk Makanan Padang | All Rights Reserved
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
